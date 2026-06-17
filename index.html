@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZWIDEFAM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="logo-container">
+      <img src="images/IMG-20260524-WA0002.jpg" alt="Zwide Fam Logo" class="logo">
+    </div>
+    <h1>ZWIDEFAM</h1>
+    <p class="tagline">Growing Minds. Caring Hearts. ♡</p>
+    <div class="hero-buttons">
+      <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore Services</button>
+      <button onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">Apply Now</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>
+      At <strong>ZWIDEFAM</strong>, we believe every child deserves care, guidance, and inspiration. 
+      We connect families with trusted <span class="highlight">nannies</span>, dedicated <span class="highlight">tutors</span>, 
+      and passionate <span class="highlight">youth coaches</span> who nurture growth both at home and beyond.
+    </p>
+
+    <div class="services">
+      <div class="service-card hidden">
+        <h3>👩‍👧 Nannies</h3>
+        <blockquote id="nanny-quote"></blockquote>
+        <p>Providing loving, reliable caregivers who create safe and joyful environments for your children.</p>
+      </div>
+      <div class="service-card hidden">
+        <h3>📚 Tutors</h3>
+        <blockquote id="tutor-quote"></blockquote>
+        <p>Offering personalized learning support to help students excel academically and build confidence.</p>
+      </div>
+      <div class="service-card hidden">
+        <h3>🌱 Youth Coaching</h3>
+        <blockquote id="coach-quote"></blockquote>
+        <p>Guiding young people with mentorship, life skills, and motivation to unlock their full potential.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services-container">
+    <div class="service-card nanny" onclick="toggleInfo('nanny-info')">
+      👶 Nanny Care – Full-time, part-time, babysitting
+      <div id="nanny-info" class="service-info">
+        <p>Our nannies provide safe, loving care tailored to your family’s needs. Options include full-time, part-time, and babysitting services.</p>
+      </div>
+    </div>
+
+    <div class="service-card tutor" onclick="toggleInfo('tutor-info')">
+      📚 Tutoring – Maths, Science, Languages, Homework help
+      <div id="tutor-info" class="service-info">
+        <p>Our tutors offer personalized lessons in Maths, Science, Languages, and homework support to help learners excel academically.</p>
+      </div>
+    </div>
+
+    <div class="service-card coach" onclick="toggleInfo('coach-info')">
+      🌱 Youth Coaching – Mentorship, life skills, motivation
+      <div id="coach-info" class="service-info">
+        <p>Our youth coaches provide mentorship, life skills training, and motivational guidance to empower young people for the future.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Product Section with Creative Style -->
+<section id="products" class="products-section">
+  <h2>✨ Our Product Packages ✨</h2>
+  <p class="products-intro">
+    Choose the package that best fits your child’s journey — whether academic success or personal growth.
+  </p>
+
+  <div class="products-container">
+    <!-- Youth Life Coaching -->
+    <div class="product-card coaching bronze">
+      <h3>🌱 Bronze Coaching – R999/month</h3>
+      <ul>
+        <li>2 Coaching Sessions per Month</li>
+        <li>Goal Setting & Motivation</li>
+        <li>Study & Time Management Tips</li>
+        <li>Confidence Building Activities</li>
+        <li>WhatsApp Support (Business Hours)</li>
+      </ul>
+    </div>
+
+    <div class="product-card coaching silver">
+      <h3>🌱 Silver Coaching – R1,999/month</h3>
+      <ul>
+        <li>4 Coaching Sessions per Month</li>
+        <li>Academic & Career Goal Planning</li>
+        <li>Leadership Development</li>
+        <li>Monthly Progress Tracking</li>
+        <li>Unlimited WhatsApp Support</li>
+      </ul>
+    </div>
+
+    <div class="product-card coaching gold">
+      <h3>🌱 Gold Coaching – R3,499/month</h3>
+      <ul>
+        <li>Weekly One-on-One Coaching</li>
+        <li>Career & Entrepreneurship Guidance</li>
+        <li>Personal Development Plan</li>
+        <li>Leadership & Communication Skills</li>
+        <li>Priority WhatsApp & Email Support</li>
+        <li>Monthly Growth Assessment</li>
+      </ul>
+    </div>
+
+    <!-- Tutoring Packages -->
+    <div class="product-card tutoring bronze">
+      <h3>📚 Bronze Tutoring – R1,800/month</h3>
+      <ul>
+        <li>4 Sessions per Month</li>
+        <li>Homework Assistance</li>
+        <li>Progress Feedback</li>
+      </ul>
+    </div>
+
+    <div class="product-card tutoring silver">
+      <h3>📚 Silver Tutoring – R3,000/month</h3>
+      <ul>
+        <li>8 Sessions per Month</li>
+        <li>Homework & Test Preparation</li>
+        <li>Monthly Progress Report</li>
+      </ul>
+    </div>
+
+    <div class="product-card tutoring gold">
+      <h3>📚 Gold Tutoring – R4,500/month</h3>
+      <ul>
+        <li>12 Sessions per Month</li>
+        <li>Study Skills Coaching</li>
+        <li>Test & Exam Preparation</li>
+      </ul>
+    </div>
+
+    <div class="product-card tutoring platinum">
+      <h3>📚 Platinum Tutoring – R6,500/month</h3>
+      <ul>
+        <li>16 Sessions per Month</li>
+        <li>Intensive Exam Preparation</li>
+        <li>Study Resources Included</li>
+        <li>Weekly Progress Updates</li>
+        <li>Priority Scheduling</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Nanny Packages Section -->
+<section id="nanny-packages">
+  <h2>👩‍👧 Professional Nanny Packages</h2>
+  <p class="products-intro">
+    At <strong>ZWIDEFAM</strong>, we provide trusted care, inspired growth, and brighter futures through our professional nanny services.
+  </p>
+
+  <div class="products-container">
+    <!-- Essential Care -->
+    <div class="product-card">
+      <h3>Package 1: Essential Care (Live-Out Nanny)</h3>
+      <p><strong>R9,000/month</strong></p>
+      <ul>
+        <li>Full-time live-out nanny (Mon–Fri)</li>
+        <li>Childcare & supervision</li>
+        <li>Children’s meal preparation</li>
+        <li>Children’s laundry</li>
+        <li>Light housekeeping related to children</li>
+        <li>Ongoing support & replacement if required</li>
+      </ul>
+      <p><strong>Best suited for:</strong> Working parents, school-going children, families not requiring accommodation.</p>
+    </div>
+
+    <!-- Family Care Plus -->
+    <div class="product-card">
+      <h3>Package 2: Family Care Plus (Live-In Nanny)</h3>
+      <p><strong>R10,000/month</strong></p>
+      <ul>
+        <li>Full-time live-in nanny</li>
+        <li>Childcare & supervision</li>
+        <li>Children’s meal preparation</li>
+        <li>Children’s laundry</li>
+        <li>General household assistance</li>
+        <li>Weekend rotation (company policy)</li>
+        <li>Ongoing support & replacement if required</li>
+      </ul>
+      <p><strong>Best suited for:</strong> Busy households, families with younger children, families needing live-in support.</p>
+    </div>
+
+    <!-- Family Assistant Premium -->
+    <div class="product-card">
+      <h3>Package 3: Family Assistant Premium (Driver’s Licence Required)</h3>
+      <p><strong>R11,000/month</strong></p>
+      <ul>
+        <li>Full-time nanny/family assistant</li>
+        <li>Valid driver’s licence</li>
+        <li>School drop-offs & collections</li>
+        <li>Transport to extracurricular activities</li>
+        <li>Family errands</li>
+        <li>Childcare & supervision</li>
+        <li>Children’s meal preparation & laundry</li>
+        <li>Ongoing support & replacement if required</li>
+      </ul>
+      <p><strong>Best suited for:</strong> Dual-income families, busy schedules, children with multiple activities.</p>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Application Form -->
+<section id="apply">
+  <h2>Apply to Join Our Team</h2>
+  <p class="apply-intro">
+    Ready to make a difference? Join Zwide Fam Agency as a nanny, tutor, or youth coach and help us nurture the next generation.
+  </p>
+  
+  <!-- Apply to Join Our Team -->
+<section id="apply">
+  <h2>Apply to Join Our Team</h2>
+  <p class="apply-intro">
+    Ready to make a difference? Join Zwide Fam Agency as a nanny, tutor, or youth coach and help us nurture the next generation.
+  </p>
+  
+  <form action="https://formspree.io/f/xwvjqwwp" method="POST" class="application-form">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="role">Preferred Role:</label>
+    <select id="role" name="role" required>
+      <option value="">-- Select a role --</option>
+      <option value="nanny">👩‍👧 Nanny</option>
+      <option value="tutor">📚 Tutor</option>
+      <option value="coach">🌱 Youth Coach</option>
+    </select>
+
+    <label for="experience">Your Experience:</label>
+    <textarea id="experience" name="experience" required></textarea>
+
+    <!-- Honeypot field for spam protection -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button type="submit">✨ Submit Application ✨</button>
+  </form>
+</section>
+
+<!-- Apply for Services Section -->
+<section id="apply-services">
+  <h2>Apply to Get Our Services</h2>
+  <p class="apply-intro">
+    Looking for trusted care, tutoring, or youth coaching? Fill out the form below and let Zwide Fam Agency connect you with the right support.
+  </p>
+
+  <form action="https://formspree.io/f/xwvjqwwp" method="POST" class="service-form">
+    <label for="parent-name">Your Name:</label>
+    <input type="text" id="parent-name" name="parent-name" required>
+
+    <label for="child-age">Child’s Age:</label>
+    <input type="number" id="child-age" name="child-age" required>
+
+    <label for="service-type">Service Needed:</label>
+    <select id="service-type" name="service-type" required>
+      <option value="">-- Select a service --</option>
+      <option value="nanny">👩‍👧 Nanny Care</option>
+      <option value="tutor">📚 Tutoring</option>
+      <option value="coach">🌱 Youth Coaching</option>
+    </select>
+
+    <label for="details">Additional Details:</label>
+    <textarea id="details" name="details" required></textarea>
+
+    <!-- Honeypot field for spam protection -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button type="submit">✨ Request Service ✨</button>
+  </form>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="contact-intro">
+    We’d love to hear from you! Reach out for service requests, applications, or general inquiries.
+  </p>
+
+  <div class="contact-container">
+    <div class="contact-card">
+      <h3>📧 Email</h3>
+      <p><a href="mailto:info@zwidefam.co.za">info@zwidefam.co.za</a></p>
+    </div>
+    <div class="contact-card">
+      <h3>📞 Phone</h3>
+      <p><a href="tel:0743385493">0743385493
+        
+      </a></p>
+    </div>
+<div class="contact-card">
+  <h3>📍 Location</h3>
+  <p>Gauteng, South Africa</p>
+  <p>We currently operate remotely and provide our services online and at client locations by appointment.</p>
+</div>
+
+<div class="contact-card">
+  <h3>⏰ Operating Hours</h3>
+  <p>Monday – Friday: 8 AM – 5 PM</p>
+  <p>Saturday: Closed</p>
+  <p>Sunday: Closed</p>
+</div>
+
+  <div class="social-links">
+    <a href="" target="_blank">👍 Facebook</a>
+    <a href="" target="_blank">📸 Instagram</a>
+    <a href="" 0743385493 target="0743385493">💬 WhatsApp</a>
+    <a href="" target="blank?_t=ZS-9737DGY8cJL">🎵 TikTok</a>
+
+  </div>
+
+  <p class="contact-note">Follow us on social media for updates and inspiration ♡</p>
+</section>
+
+<!-- Partners Section -->
+<section id="partners">
+  <h2>🤝 Our Partners</h2>
+  <p class="partners-intro">
+    We are proud to collaborate with leading organizations that share our vision for growth and innovation.
+  </p>
+
+  <div class="partners-container">
+    <div class="partner-card">
+      <img src="images/MICROSOFT.webp" alt="Microsoft Logo" class="partner-logo">
+      <h3>Microsoft</h3>
+      <p>Supporting ZWIDEFAM with technology, innovation, and digital empowerment initiatives.</p>
+      <a href="https://www.microsoft.com" target="_blank">🌐 Visit Microsoft</a>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2026 ZWIDEFAM | Katlehong, Gauteng</p>
+  </footer>
+
+  <!-- Link to external JS -->
+  <script src="qoutes.js"></script>
+</body>
+</html>

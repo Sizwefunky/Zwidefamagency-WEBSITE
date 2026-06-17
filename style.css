@@ -1,0 +1,543 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #dfe7f5;
+  color: #333;
+}
+
+#hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e0dcf1, #fed6e3);
+}
+
+.logo {
+  width: 320px;
+  border-radius: 50%;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hero-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Services Section */
+#services {
+  padding: 60px 20px;
+  text-align: center;
+  background: #e8f0fe; /* different color than body */
+}
+
+#services h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Flexbox layout for cards side by side */
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.service-card {
+  flex: 1 1 280px; /* responsive width */
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Different colors for each service */
+.service-card.nanny {
+  background: #f19f34; /* warm orange */
+}
+.service-card.tutor {
+  background: #022135; /* soft blue */
+}
+.service-card.coach {
+  background: #d8a5c2; /* fresh green */
+}
+
+/* Hidden info section */
+.service-info {
+  display: none;
+  margin-top: 15px;
+  font-weight: normal;
+  color: #fff;
+}
+.service-card.active .service-info {
+  display: block;
+}
+
+/* Application Form Section */
+#apply {
+  padding: 60px 20px;
+  background: #fff3e0; /* soft peach background to stand out */
+  text-align: center;
+}
+
+#apply h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.apply-intro {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.application-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.application-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.application-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.application-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #6ec6ff; /* bright blue button */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.application-form button:hover {
+  background: #2196f3; /* darker blue on hover */
+}
+
+/* Apply for Services Section */
+#apply-services {
+  padding: 60px 20px;
+  background: #e0f7fa; /* soft aqua background to distinguish */
+  text-align: center;
+}
+
+#apply-services h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#apply-services .apply-intro {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.service-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.service-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.service-form input,
+.service-form select,
+.service-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.service-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.service-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #81c784; /* green button */
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.service-form button:hover {
+  background: #388e3c; /* darker green on hover */
+}
+
+
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background: #f0f4f8; /* soft background */
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-intro {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  flex: 1 1 200px;
+  max-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contact-card a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-title {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.social-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #2196f3;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #1769aa;
+}
+
+.contact-note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    max-width: 90%;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links a {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.products-section {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.product-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-card ul li::before {
+  content: "✔ ";
+  color: #4CAF50;
+}
+
+.coaching.bronze { border-top: 6px solid #ff9aa2; }
+.coaching.silver { border-top: 6px solid #a2d2ff; }
+.coaching.gold   { border-top: 6px solid #fbc531; }
+
+.tutoring.bronze { border-top: 6px solid #ffb347; }
+.tutoring.silver { border-top: 6px solid #87ceeb; }
+.tutoring.gold   { border-top: 6px solid #ffd700; }
+.tutoring.platinum { border-top: 6px solid #c0c0c0; }
+
+#partners {
+  background: #f3f6fb;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.partner-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+}
+
+.partner-logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+/* Nanny Packages Section */
+#nanny-packages {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#nanny-packages h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#nanny-packages .products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+#nanny-packages .product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#nanny-packages .product-card:hover {
+  transform: translateY(-5px);
+}
+
+#nanny-packages .product-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #444;
+}
+
+#nanny-packages .product-card p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+#nanny-packages .product-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#nanny-packages .product-card ul li::before {
+  content: "✔ ";
+  color: #4CAF50;
+}
+
+/* Color-coded borders for each package */
+.product-card:nth-child(1) { border-top: 6px solid #ff9aa2; } /* Essential Care */
+.product-card:nth-child(2) { border-top: 6px solid #87ceeb; } /* Family Care Plus */
+.product-card:nth-child(3) { border-top: 6px solid #ffd700; } /* Family Assistant Premium */
+
+
+
+
+
+.service-card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 15px 0;
+  position: relative;
+  transition: opacity 1s ease;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 24px;
+  color: #aaa;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
