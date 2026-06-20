@@ -5,15 +5,15 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zwidefam.co.za/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zwidefam.co.za/contact.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://zwidefam.co.za/services.html</loc>
+    <loc>https://zwidefam.co.za/index.html</loc>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zwidefam.co.za/style.css</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://zwidefam.co.za/quotes.js</loc>
+    <priority>0.5</priority>
   </url>
 </urlset>
